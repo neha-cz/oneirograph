@@ -37,7 +37,6 @@ Each skeleton becomes a node in a meta-graph connecting all your dreams. A TEBD 
 - **[Perceval](https://perceval.quandela.net/)** — photonic QUBO via Fock state sampling
 - **[PennyLane](https://pennylane.ai/)** — post-variational quantum neural network
 - **[TensorNetwork](https://github.com/google/TensorNetwork)** — TEBD deep Q-learning
-- **[Whisper](https://openai.com/research/whisper)** — voice transcription
 - **[React Flow](https://reactflow.dev/)** — graph visualization
 
 ---
