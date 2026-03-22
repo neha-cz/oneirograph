@@ -1,8 +1,8 @@
 # oneirograph
 
-A dream journaling app that maps the recurring symbolic structures in your dream life using quantum graph algorithms.
+A dream journaling app that maps the recurring symbolic structures in your dream life using quantum graph algorithms. 
 
-You log dreams. Over time, Oneirograph builds a personal symbolic map — not through interpretation, but through structural analysis. It finds the patterns underneath your dreams that you can't see yourself.
+Users log dreams every night. Over time, Oneirograph builds a personal symbolic map through structural analysis, finding underlying patterns underneath your dreams that you can't see yourself.
 
 ---
 
@@ -11,15 +11,15 @@ You log dreams. Over time, Oneirograph builds a personal symbolic map — not th
 Every dream you log passes through three stages.
 
 **1. Graph construction**
-Your dream report (voice or text) is parsed by an LLM into a symbolic graph. Symbols, locations, emotions, and figures become nodes. Relationships and transitions become edges. Each node carries a feature vector encoding emotional charge, scale, familiarity, threat level, and other dimensions. The LLM abstracts upward — "a door I couldn't open" becomes a `threshold` node, not a door node.
+Your dream report is parsed by an LLM into a symbolic graph. Symbols, locations, emotions, and figures become nodes. Relationships and transitions become edges. Each node carries a feature vector encoding emotional charge, scale, familiarity, threat level, and other dimensions. 
 
 **2. Skeleton extraction**
-A photonic QUBO optimizer (running on Quandela's Perceval simulator via Fock state sampling) finds the minimum-energy subgraph of that dream — the irreducible structural core. Remove any node from this skeleton and the dream loses coherence. This is the load-bearing symbolic structure underneath the surface content.
+A photonic quadratic unconstrained binary optimizer (QUBO) finds the minimum-energy subgraph of that dream — the irreducible structural core. It does so running on Quandela's Perceval simulator via Fock state sampling. This is the load-bearing symbolic structure underneath the surface content.
 
-A post-variational quantum neural network classifies each node into a functional symbolic type (threshold, unknown presence, enclosed space, void, guide, etc.). The QNN handles the sparse, fuzzy feature distributions of symbolic data better than classical alternatives at small sample sizes.
+A post-variational quantum neural network then classifies each node into a functional symbolic type (threshold, unknown presence, enclosed space, void, guide, etc.). The QNN handles the sparse, fuzzy feature distributions of symbolic data better than classical alternatives at small sample sizes.
 
 **3. Pattern learning across time**
-Each skeleton becomes a node in a meta-graph connecting all your dreams. A TEBD deep Q-learning walker traverses this meta-graph. Its policy is a Matrix Product State — a tensor network representation that efficiently captures correlations across your dream history without exponential blowup. Over time it learns your personal symbolic grammar: which skeleton types recur, which sequences precede phase transitions, which dreams are structurally anomalous.
+Each skeleton becomes a node in a meta-graph connecting all your dreams. A TEBD-inspired deep Q-learning walker traverses this meta-graph. Its policy is a Matrix Product State — a tensor network representation that efficiently captures correlations across your dream history without exponential blowup. Over time it learns your personal symbolic grammar: which skeleton types recur, which sequences precede phase transitions, which dreams are structurally anomalous.
 
 ---
 
