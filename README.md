@@ -1,4 +1,4 @@
-# oneirograph
+# oneirograph 🪬🌙
 
 A dream journaling app that maps the recurring symbolic structures in your dream life using quantum graph algorithms. 
 
