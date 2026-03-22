@@ -1,0 +1,8 @@
+# Core app (Jac runtime installed separately: pip install jaseci)
+# numpy not required — helpers/backends use stdlib math only
+openai>=1.0.0
+
+# Optional: swap in when you wire real quantum backends
+# pennylane
+# perceval-quandela
+# tensornetwork
