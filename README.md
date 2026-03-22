@@ -41,13 +41,3 @@ Each skeleton becomes a node in a meta-graph connecting all your dreams. A TEBD-
 
 ---
 
-## Running
-
-```bash
-pip install jaseci pennylane tensornetwork perceval-quandela openai anthropic
-
-export ANTHROPIC_API_KEY="..."
-export OPENAI_API_KEY="..."
-
-jac start main.jac
-```
